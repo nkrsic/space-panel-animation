@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://space-terminal-ooze-512.png" type="Texture" id=1]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "space_panel",
+"speed": 5.0
+} ]
+
+[node name="Main" type="Node2D"]
+
+[node name="AnimatedSpacePanel" type="AnimatedSprite" parent="."]
+position = Vector2( 512, 294 )
+frames = SubResource( 1 )
+animation = "space_panel"
